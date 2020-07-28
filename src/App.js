@@ -21,14 +21,16 @@ class App extends Component{
 render(){
   return(
     <div className="App">
-      <div className="Header">
-        <h2 className="h2">Home</h2>
-      </div>
-      <div className="InfoCard">
+      <div className="Main">
+        <div className="Header">
+          <h3 className="h3">Home</h3>
+        </div>
+        <div className="InfoCard">
         
+        </div>
       </div>
-
     </div>
+
   )
 }
 
