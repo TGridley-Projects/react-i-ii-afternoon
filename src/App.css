@@ -35,8 +35,16 @@ h3{
 }
 
 .InfoCard {
+  position: absolute;
   height: 50%;
-  width: 85%;
+  width: 55%;
   background-color: #ffffff;
+  display: flex;
+}
 
+.recordNumber {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  
 }
