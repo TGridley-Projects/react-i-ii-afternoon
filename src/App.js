@@ -19,6 +19,7 @@ class App extends Component{
 
 render(){
   let index = this.state.id 
+  const countLngth = this.state.people.length
   const Person = this.state.people[index]
   return(
     <div className="App">
@@ -28,6 +29,7 @@ render(){
         </div>
         <div className="InfoCard">       
           <DisplayCard
+              lngth = {countLngth}
               id = {Person.id}
               name={Person.name}
               city={Person.city}
