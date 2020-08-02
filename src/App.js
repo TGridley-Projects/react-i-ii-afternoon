@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import People from './data.js';
 import DisplayCard from './DisplayCard.js'
+import Buttons from './Buttons.js'
 
 
 class App extends Component{
@@ -38,6 +39,14 @@ render(){
               title={Person.title}
           favoriteMovies={Person.favoriteMovies} />
         </div>
+        <Buttons
+          id = {Person.id}
+        />
+        <div className="centerButtons">
+          <button className="buttonShared2">Edit</button>
+          <button className="buttonShared2">Delete</button>
+          <button className="buttonShared2">New</button>
+        </div>  
       </div>
     </div>
     )

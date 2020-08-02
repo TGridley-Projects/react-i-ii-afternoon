@@ -9,10 +9,19 @@ const DisplayCard = (props) => {
             <h1 className="name">{props.name.first} {props.name.last}</h1>
             <br/>
             <br/>
-            <h3 className="listItem">From:</h3><p3>{props.city}, {props.country}</p3>
-
+            <br/>   
+            <div className="textBox">
+               <h3>From:<span className="inlineText"> {props.city}, {props.country}</span></h3>      
+               <h3>Job Title:<span className="inlineText"> {props.title}</span></h3>        
+               <h3>Employer:<span className="inlineText"> {props.employer}</span></h3>
+            </div>    
+            <div className="movies">
+                <h3>Favorite Movies:</h3>            
+                    <span className="moviesList">1.  {props.favoriteMovies[0]}</span><br/>
+                    <span className="moviesList">2.  {props.favoriteMovies[1]}</span><br/>
+                    <span className="moviesList">3.  {props.favoriteMovies[2]}</span><br/>                
+            </div>
         </div>
     )
 }
-
 export default DisplayCard
